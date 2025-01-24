@@ -1,0 +1,101 @@
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altum Mare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <ul class="header-nav-list list">
+          <li class="hader-nav-list-item">
+            <a href="" class="link">Про проєкт</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="" class="link">Послуги</a>
+          </li>
+        </ul>
+        <a href="./index.html"
+          ><img
+            src="./images/logo/logo-header.png"
+            alt="логотип компанії"
+            width="160"
+        /></a>
+        <ul class="header-nav-list list">
+          <li class="hader-nav-list-item">
+            <a href="" class="link">Читальня</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="" class="link">Контакти</a>
+          </li>
+        </ul>
+        <!-- <button class="mob-menu-btn" type="button">
+          <svg class="mob-menu-icon" width="40" height="40">
+            <use href="./images/icons/icons.svg#icon-menu"></use>
+          </svg>
+        </button> -->
+      </div>
+    </header>
+    <main>
+      <section class="section contac-form-section">
+        <div class="container contact-form-container">
+          <h1 class="section-title">Звʼязатись з нами</h1>
+          <div class="section-img-wrap">
+            <img src="./images/logo/logo-contacts.png" alt="" width="310" />
+          </div>
+          <div class="form-container">
+            <form class="form">
+              <div class="form-group">
+                <label for="email">Ваше імʼя</label>
+                <input type="text" id="name" name="name" required="" />
+              </div>
+              <div class="form-group">
+                <label for="email">Ваш контакт</label>
+                <input type="text" id="contact" name="contact" required="" />
+              </div>
+              <div class="form-group">
+                <label for="textarea">Як я можу вам допомогти?</label>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  rows="10"
+                  cols="50"
+                  required=""
+                >
+                </textarea>
+              </div>
+              <button class="form-submit-btn" type="submit">Надіслати</button>
+              <button class="cta-button back-btn">
+                <a class="link" href="./index.html">↩︎</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <p class="footer-text">&copy; Altum Mare 2025</p>
+        <a href="./index.html"
+          ><img src="./images/logo/logo-footer.png" alt="" width="120"
+        /></a>
+        <p class="footer-text">Developed with 🖤 by Dari Shpak</p>
+      </div>
+    </footer>
+  </body>
+</html>
