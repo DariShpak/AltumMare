@@ -52,13 +52,14 @@ ol {
 .section {
   max-width: 375px;
   padding-bottom: 72px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
   padding-left: 32px;
   padding-right: 32px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .list {
@@ -100,7 +101,6 @@ ol {
   flex-direction: column;
   gap: 21px;
 }
-
 
 /* header */
 
