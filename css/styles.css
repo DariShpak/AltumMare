@@ -80,6 +80,8 @@ ol {
   font-weight: 200;
   line-height: 110%;
   letter-spacing: -1;
+
+  margin-bottom: 48px;
 }
 
 .section-subtitle {
@@ -100,6 +102,13 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 21px;
+}
+
+.decor-line {
+  width: 60px;
+  height: 1px;
+  margin-left: auto;
+  background-color: var(--dark-color);
 }
 
 /* header */
@@ -170,6 +179,15 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+/* blog */
+.blog-container{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.blog-container .section-title {
+  margin-bottom: 0;
 }
 
 /* footer */
