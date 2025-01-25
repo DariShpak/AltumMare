@@ -15,3 +15,25 @@ menuBtn.addEventListener("click", () => {
   iconBurger.classList.toggle("hidden", !isMenuOpen)
   iconClose.classList.toggle("hidden", isMenuOpen)
 })
+
+// Додаємо обробник кліку для якірних посилань
+const anchorLinks = document.querySelectorAll('a[href^="#"]')
+anchorLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    // Перевіряємо, чи відкрито меню, і закриваємо його
+    if (menu.style.display === "block") {
+      menu.style.display = "none"
+      iconBurger.classList.remove("hidden")
+      iconClose.classList.add("hidden")
+    }
+  })
+})
+
+// Додаємо обробник прокручування сторінки, щоб ховати меню
+window.addEventListener("scroll", () => {
+  if (menu.style.display === "block") {
+    menu.style.display = "none"
+    iconBurger.classList.remove("hidden")
+    iconClose.classList.add("hidden")
+  }
+})
