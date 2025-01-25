@@ -157,7 +157,6 @@ ol {
   padding-top: 12px;
 }
 
-
 /* header */
 
 .header {
@@ -260,6 +259,22 @@ ol {
 }
 
 /* services-page */
+
+.dreams-container .section-subtitle {
+  margin-top: 16px;
+}
+
+.art-container .section-subtitle {
+  margin-top: 16px;
+}
+
+.body-container .section-subtitle {
+  margin-top: 16px;
+}
+
+.astro-container .section-subtitle {
+  margin-top: 16px;
+}
 
 .service {
   border-bottom: 1px solid var(--dark-color);
