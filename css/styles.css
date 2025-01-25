@@ -338,6 +338,17 @@ ol {
   text-align: center;
 }
 
+.heart-icon {
+  animation: beat 0.7s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.6);
+  }
+}
+
 /* Стиль для фону модального вікна */
 .modal {
   display: none;
