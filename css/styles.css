@@ -132,11 +132,14 @@ ol {
   padding-right: 20px;
 }
 
-.cta-button .btn-link {
+/* .cta-button .btn-link {
   color: var(--bg-color);
   font-size: 12px;
   font-weight: 200;
   text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
 }
 
 .cta-button:hover,
@@ -147,14 +150,21 @@ ol {
 .cta-button .btn-link:hover,
 .cta-button .btn-link:focus {
   color: var(--dark-color);
-}
+} */
 
-.more-btn {
+.more-btn,
+.open-modal-btn {
+  display: flex;
+  gap: 6px;
+  align-items:center;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
   padding-bottom: 12px;
   padding-top: 12px;
+
+  background-color: transparent;
+  border: none;
 }
 
 /* header */
@@ -310,7 +320,7 @@ ol {
   padding-bottom: 12px;
 }
 
-.cta-button.service-btn {
+.astro-container .open-modal-btn {
   margin-top: 48px;
 }
 
@@ -346,7 +356,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background-color:var(--bg-color);
+  background-color: var(--bg-color);
   margin: 10% auto;
   padding: 20px;
   border: 1px solid var(--dark-color);
