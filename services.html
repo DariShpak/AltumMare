@@ -248,6 +248,48 @@
         <p class="footer-text">Developed with 🖤 by Dari Shpak</p>
       </div>
     </footer>
+    <!-- Модальне вікно -->
+    <div class="modal" id="contact-modal">
+      <div class="modal-content">
+        <button class="close-btn" id="close-modal">
+          <svg
+            class="close-modal-icon"
+            id="close-modal-icon"
+            width="30"
+            height="30"
+          >
+            <use
+              href="./images/icons/icons-am.svg#icon-close"
+              class="icon-close-modal"
+              id="icon-close-modal"
+            ></use>
+          </svg>
+        </button>
+
+        <h2 class="section-subtitle">Напишіть нам</h2>
+        <div class="section-img-wrap">
+          <img
+            src="./images/logo/logo-contacts.png"
+            alt="логотип компанії"
+            width="310"
+          />
+        </div>
+
+        <form id="contact-form">
+          <label for="name">Ваше ім'я</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Ваш контакт</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Ваш запит</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="submit-btn">Відправити</button>
+        </form>
+      </div>
+    </div>
     <script type="module" src="./js/mob-menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>
