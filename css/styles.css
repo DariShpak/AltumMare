@@ -245,7 +245,7 @@ ol {
 /* hero */
 
 .hero-section {
-  padding-top: 16px;
+  padding-top: 72px;
   padding-bottom: 72px;
 }
 
@@ -304,6 +304,10 @@ ol {
 }
 
 /* services-page */
+
+.dreams-section{
+  padding-top: 72px;
+}
 
 .dreams-container .section-subtitle {
   margin-top: 16px;
