@@ -346,13 +346,13 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background-color: #fff;
+  background-color:var(--bg-color);
   margin: 10% auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 100%;
-  height: 100%;
-  max-width: 500px;
+  border: 1px solid var(--dark-color);
+  width: 90%;
+  height: 90%;
+  max-width: 320px;
   position: relative;
 }
 
