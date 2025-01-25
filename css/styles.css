@@ -4,6 +4,10 @@
   --accent-color: #a3c5ba;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -52,6 +56,7 @@ ol {
 
 .section {
   max-width: 375px;
+  padding-top: 12px;
   padding-bottom: 72px;
 
   margin-left: auto;
@@ -143,6 +148,15 @@ ol {
 .cta-button .btn-link:focus {
   color: var(--dark-color);
 }
+
+.more-btn {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
 
 /* header */
 
@@ -253,7 +267,7 @@ ol {
   padding-bottom: 12px;
 }
 
-.cta-button.service-btn{
+.cta-button.service-btn {
   margin-top: 48px;
 }
 
