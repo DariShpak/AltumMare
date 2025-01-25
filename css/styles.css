@@ -275,7 +275,7 @@ ol {
 
 /* services */
 
-.services-container .section-title{
+.services-container .section-title {
   margin-bottom: 72px;
 }
 
@@ -290,7 +290,6 @@ ol {
   flex-direction: column;
   gap: 48px;
 }
-
 
 /* blog */
 .blog-container {
@@ -308,13 +307,23 @@ ol {
 
 /* services-page */
 
-.dreams-container{
+.dreams-container {
   display: flex;
   flex-direction: column;
   gap: 72px;
 }
 
-.dreams-container .section-text-content{
+.dreams-container .section-text-content {
+  gap: 72px;
+}
+
+.art-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.art-container .section-text-content {
   gap: 72px;
 }
 
@@ -324,8 +333,26 @@ ol {
   padding-bottom: 12px;
 }
 
-.astro-container .open-modal-btn {
-  margin-top: 48px;
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.body-container .section-text-content {
+  gap: 72px;
+}
+
+
+.astro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.astro-container .section-text-content {
+  gap: 72px;
 }
 
 /* footer */
