@@ -1,14 +1,16 @@
-// Отримуємо елементи
-const openModalBtn = document.querySelector(".open-modal-btn")
+// Отримуємо всі кнопки для відкриття модалки
+const openModalBtns = document.querySelectorAll(".open-modal-btn")
 const modal = document.getElementById("contact-modal")
 const closeModalBtn = document.getElementById("close-modal")
 
-// Відкриваємо модальне вікно
-openModalBtn.addEventListener("click", () => {
-  modal.style.display = "block"
+// Відкриваємо модальне вікно при натисканні на будь-яку кнопку
+openModalBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modal.style.display = "block"
+  })
 })
 
-// Закриваємо модальне вікно
+// Закриваємо модальне вікно при натисканні на кнопку закриття
 closeModalBtn.addEventListener("click", () => {
   modal.style.display = "none"
 })
