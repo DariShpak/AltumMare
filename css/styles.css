@@ -273,10 +273,6 @@ ol {
   text-align: justify;
 }
 
-/* .hero-img-wrap{
-  max-width: 290px;
-} */
-
 /* services */
 
 .services-container .section-title{
@@ -300,10 +296,7 @@ ol {
 .blog-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-}
-.blog-container .section-title {
-  margin-bottom: 0;
+  gap: 72px;
 }
 
 /* contacts */
@@ -315,24 +308,14 @@ ol {
 
 /* services-page */
 
-.dreams-section {
-  padding-top: 72px;
+.dreams-container{
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 
-.dreams-container .section-subtitle {
-  margin-top: 16px;
-}
-
-.art-container .section-subtitle {
-  margin-top: 16px;
-}
-
-.body-container .section-subtitle {
-  margin-top: 16px;
-}
-
-.astro-container .section-subtitle {
-  margin-top: 16px;
+.dreams-container .section-text-content{
+  gap: 72px;
 }
 
 .service {
