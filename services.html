@@ -22,27 +22,45 @@
     <header class="header">
       <div class="container header-container">
         <ul class="header-nav-list list">
-          <li class="hader-nav-list-item">
-            <a href="" class="link">Про проєкт</a>
-          </li>
           <li class="header-nav-list-item">
             <a href="" class="link">Послуги</a>
           </li>
         </ul>
-        <a href="./index.html"
+        <a href="./index.html" class="logo-header"
           ><img
             src="./images/logo/logo-header.png"
             alt="логотип компанії"
             width="160"
         /></a>
         <ul class="header-nav-list list">
-          <li class="hader-nav-list-item">
-            <a href="" class="link">Читальня</a>
-          </li>
           <li class="header-nav-list-item">
-            <a href="" class="link">Контакти</a>
+            <a href="./index.html#contacts-section" class="link">Контакти</a>
           </li>
         </ul>
+        <button class="mob-menu-btn" type="button" aria-label="Відкрити меню">
+          <svg class="mob-menu-icon" id="menu-icon" width="30" height="30">
+            <use
+              href="./images/icons/icons-am.svg#icon-burger"
+              class="icon-burger"
+              id="icon-burger"
+            ></use>
+            <use
+              href="./images/icons/icons-am.svg#icon-close"
+              class="icon-close hidden"
+              id="icon-close"
+            ></use>
+          </svg>
+        </button>
+        <!-- Мобільне меню -->
+        <nav class="mob-menu" id="mob-menu">
+          <ul class="mob-menu-list">
+            <li><a href="./services.html" class="mob-menu-link">Домашня</a></li>
+            <li><a href="#blog" class="mob-menu-link">Читальня</a></li>
+            <li>
+              <a href="#contacts-section" class="mob-menu-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -192,13 +210,13 @@
               вашою істинною природою
             </p>
           </div>
-          <button class="cta-button service-btn">
-            <a href="" class="btn-link link">замовити консультацію</a>
-          </button>
+          <a href="./services.html#astro-section" class="more-btn link"
+            >Замовити консультацію →
+          </a>
         </div>
       </section>
       <div class="decor-line"></div>
-      <section class="section contacts-section">
+      <section id="contacts-section" class="section contacts-section">
         <div class="container contacts-container">
           <h2 class="section-title">Контакти</h2>
           <div class="contacts-info-wrap">
@@ -230,5 +248,6 @@
         <p class="footer-text">Developed with 🖤 by Dari Shpak</p>
       </div>
     </footer>
+    <script type="module" src="./js/mob-menu.js"></script>
   </body>
 </html>
