@@ -16,7 +16,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -38,11 +37,28 @@
             <a href="./index.html#contacts-section" class="link">Контакти</a>
           </li>
         </ul>
-        <!-- <button class="mob-menu-btn" type="button">
-          <svg class="mob-menu-icon" width="40" height="40">
-            <use href="./images/icons/icons.svg#icon-menu"></use>
+        <button class="mob-menu-btn" type="button" aria-label="Відкрити меню">
+          <svg class="mob-menu-icon" id="menu-icon" width="30" height="30">
+            <use
+              href="./images/icons/icons-am.svg#icon-burger"
+              class="icon-burger"
+              id="icon-burger"
+            ></use>
+            <use
+              href="./images/icons/icons-am.svg#icon-close"
+              class="icon-close hidden"
+              id="icon-close"
+            ></use>
           </svg>
-        </button> -->
+        </button>
+        <!-- Мобільне меню -->
+        <nav class="mob-menu" id="mob-menu">
+          <ul class="mob-menu-list">
+            <li><a href="./services.html" class="mob-menu-link">Послуги</a></li>
+            <li><a href="#blog" class="mob-menu-link">Читальня</a></li>
+            <li><a href="#contacts-section" class="mob-menu-link">Контакти</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -171,9 +187,9 @@
         <div class="container contacts-container">
           <h2 class="section-title">Контакти</h2>
           <div class="contacts-info-wrap">
-            <button class="cta-button" type="button">
-              <a href="./" class="btn-link link">Зв'язатися</a>
-            </button>
+            <a href="./services.html#astro-section" class="more-btn link"
+              >Звʼязатися →
+            </a>
 
             <ul class="list contacts-list">
               <li class="contacts-list-item">
@@ -200,5 +216,6 @@
         <p class="footer-text">Developed with 🖤 by Dari Shpak</p>
       </div>
     </footer>
+    <script type="module" src="./js/mob-menu.js"></script>
   </body>
 </html>
