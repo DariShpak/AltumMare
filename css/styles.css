@@ -56,7 +56,7 @@ ol {
 
 .section {
   max-width: 375px;
-  padding-top: 12px;
+  padding-top: 72px;
   padding-bottom: 72px;
 
   margin-left: auto;
@@ -86,8 +86,6 @@ ol {
   font-weight: 200;
   line-height: 110%;
   letter-spacing: -1;
-
-  margin-bottom: 48px;
 }
 
 .section-subtitle {
@@ -107,7 +105,7 @@ ol {
 .section-text-content {
   display: flex;
   flex-direction: column;
-  gap: 21px;
+  gap: 24px;
 }
 
 .list-title {
@@ -122,7 +120,7 @@ ol {
   margin-left: auto;
   background-color: var(--dark-color);
 }
-
+/* 
 .cta-button {
   border: 1px solid var(--dark-color);
   background-color: var(--dark-color);
@@ -130,7 +128,7 @@ ol {
   padding-bottom: 12px;
   padding-left: 20px;
   padding-right: 20px;
-}
+} */
 
 /* .cta-button .btn-link {
   color: var(--bg-color);
@@ -193,7 +191,7 @@ ol {
 
 .mob-menu-btn {
   position: absolute;
-  top: 24;
+  top: 28;
   right: 26;
   padding: 0;
   border: none;
@@ -203,7 +201,7 @@ ol {
 }
 
 .hidden {
-  display: none; /* Ховає іконку */
+  display: none;
 }
 
 .mob-menu {
@@ -216,7 +214,7 @@ ol {
   width: 90%;
   height: 100%;
   padding: 20px;
-  display: none; /* Ховаємо меню за замовчуванням */
+  display: none;
 }
 
 .mob-menu-list {
@@ -226,7 +224,7 @@ ol {
 
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
   justify-content: center;
   text-align: center;
 }
@@ -234,7 +232,7 @@ ol {
 .mob-menu-link {
   color: var(--dark-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
   display: block;
 }
 
@@ -249,11 +247,17 @@ ol {
   padding-bottom: 72px;
 }
 
-.hero-text-content {
-  margin-bottom: 38px;
+.hero-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 48px;
+}
+
+.hero-text-content {
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .hero-title {
@@ -275,17 +279,23 @@ ol {
 
 /* services */
 
+.services-container .section-title{
+  margin-bottom: 72px;
+}
+
 .services-list {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 72px;
 }
 
 .services-list-item {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
 }
+
+
 /* blog */
 .blog-container {
   display: flex;
@@ -305,7 +315,7 @@ ol {
 
 /* services-page */
 
-.dreams-section{
+.dreams-section {
   padding-top: 72px;
 }
 
@@ -400,7 +410,7 @@ ol {
 .modal-content {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   gap: 16px;
   background-color: var(--bg-color);
   margin: 10% auto;
