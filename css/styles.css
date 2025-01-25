@@ -396,6 +396,7 @@ ol {
 .modal-content {
   display: flex;
   flex-direction: column;
+  align-items:center;
   gap: 16px;
   background-color: var(--bg-color);
   margin: 10% auto;
