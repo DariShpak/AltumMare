@@ -253,6 +253,14 @@ ol {
   gap: 48px;
 }
 
+.hero-img-wrap > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+}
+
 .hero-text-content {
   max-width: 310px;
   display: flex;
@@ -274,6 +282,14 @@ ol {
 }
 
 /* services */
+
+.section-img-wrap > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+}
 
 .services-container .section-title {
   margin-bottom: 72px;
@@ -300,7 +316,6 @@ ol {
 
 /* contacts */
 .contacts-info-wrap {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -334,7 +349,6 @@ ol {
   padding-bottom: 12px;
 }
 
-
 .body-container {
   display: flex;
   flex-direction: column;
@@ -344,7 +358,6 @@ ol {
 .body-container .section-text-content {
   gap: 72px;
 }
-
 
 .astro-container {
   display: flex;
