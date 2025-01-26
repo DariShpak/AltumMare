@@ -253,13 +253,13 @@ ol {
   gap: 48px;
 }
 
-.hero-img-wrap > img {
+/* .hero-img-wrap > img {
   display: block;
   height: 100%;
   width: 100%;
 
   object-fit: cover;
-}
+} */
 
 .hero-text-content {
   max-width: 360px;
@@ -283,7 +283,7 @@ ol {
 
 /* services */
 
-.section-img-wrap{
+/* .section-img-wrap{
   max-width: 360px;
 }
 
@@ -293,7 +293,7 @@ ol {
   width: 100%;
 
   object-fit: cover;
-}
+} */
 
 .services-container .section-title {
   margin-bottom: 72px;
