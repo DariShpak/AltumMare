@@ -262,7 +262,7 @@ ol {
 }
 
 .hero-text-content {
-  max-width: 310px;
+  max-width: 360px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -282,6 +282,10 @@ ol {
 }
 
 /* services */
+
+.section-img-wrap{
+  max-width: 360px;
+}
 
 .section-img-wrap > img {
   display: block;
