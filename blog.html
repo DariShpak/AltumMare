@@ -1,0 +1,229 @@
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altum Mare</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/icons/favicon/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <button id="scroll-to-top" class="scroll-to-top-btn">
+      <svg class="scroll-up-icon" width="30" height="30">
+        <use href="./images/icons/icons-am.svg#icon-up"></use>
+      </svg>
+    </button>
+    <header class="header">
+      <div class="container header-container">
+        <ul class="header-nav-list list">
+          <li class="header-nav-list-item">
+            <a href="" class="link">Послуги</a>
+          </li>
+        </ul>
+        <a href="./index.html" class="logo-header"
+          ><img
+            src="./images/logo/logo-header.png"
+            alt="логотип компанії"
+            width="180"
+        /></a>
+        <ul class="header-nav-list list">
+          <li class="header-nav-list-item">
+            <a href="./index.html#contacts-section" class="link">Контакти</a>
+          </li>
+        </ul>
+        <button class="mob-menu-btn" type="button" aria-label="Відкрити меню">
+          <svg class="mob-menu-icon" id="menu-icon" width="30" height="30">
+            <use
+              href="./images/icons/icons-am.svg#icon-burger"
+              class="icon-burger"
+              id="icon-burger"
+            ></use>
+            <use
+              href="./images/icons/icons-am.svg#icon-close"
+              class="icon-close hidden"
+              id="icon-close"
+            ></use>
+          </svg>
+        </button>
+        <!-- Мобільне меню -->
+        <nav class="mob-menu" id="mob-menu">
+          <ul class="mob-menu-list">
+            <li><a href="./services.html" class="mob-menu-link">Послуги</a></li>
+            <li><a href="#blog" class="mob-menu-link">Читальня</a></li>
+            <li>
+              <a href="#contacts-section" class="mob-menu-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container ">
+          <div class="section-img-wrap">
+            <img src="./images/img/stories.jpg" alt="" width="310" />
+          </div>
+          <h1 class="hero-title">Читальня Altum Mare</h1>
+        </div>
+      </section>
+      <div class="decor-line"></div>
+
+      <section class="section blog-page-section">
+        <div class="container blog-page-container">
+          <div class="section-text-content">
+            <ul class="blog-posts-list list">
+              <li class="blog-post-item">
+                <h3 class="section-subtitle">Сон та творчість - Гіпнагогія</h3>
+                <!-- <p class="section-text">
+                  Затишний куточок для тих, хто любить шукати відповіді в
+                  текстах. Тут зібрані книги, статті та інші матеріали, які
+                  надихають, навчають і відкривають нові горизонти для роздумів
+                  і саморозвитку.
+                </p> -->
+                <div class="decor-line"></div>
+              </li>
+              <li class="blog-post-item">
+                <h3 class="section-subtitle">
+                  Метод креативності Сальвадора Далі
+                </h3>
+                <!-- <p class="section-text"></p> -->
+                <div class="decor-line"></div>
+              </li>
+              <li class="blog-post-item">
+                <h3 class="section-subtitle">Сон "Два черепи у печері"</h3>
+                <div class="decor-line"></div>
+              </li>
+              <li class="blog-post-item">
+                <h3 class="section-subtitle">Сновидіння і почуття щастя</h3>
+                <div class="decor-line"></div>
+              </li>
+              <li class="blog-post-item">
+                <h3 class="section-subtitle">Сновидіння "Підвал"</h3>
+                <div class="decor-line"></div>
+              </li>
+              <li class="blog-post-item">
+                <h3 class="section-subtitle">
+                  Що символізують частини будинку
+                </h3>
+                <div class="decor-line"></div>
+              </li>
+              <li class="blog-post-item">
+                <h3 class="section-subtitle">Образ будинок</h3>
+                <div class="decor-line"></div>
+              </li>
+              <li class="blog-post-item">
+                <h3 class="section-subtitle">Гігієна сну - корисні ритуали</h3>
+                <div class="decor-line"></div>
+              </li>
+              <li class="blog-post-item">
+                <h3 class="section-subtitle">Образ лісу</h3>
+                <div class="decor-line"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="decor-line"></div>
+      <section id="contacts-section" class="section contacts-section">
+        <div class="container contacts-container">
+          <h2 class="section-title visually-hidden">Контакти</h2>
+          <div class="contacts-info-wrap">
+            <button class="more-btn link open-modal-btn">
+              Написати нам
+              <svg class="button-decor-icon" width="16" height="16">
+                <use href="./images/icons/icons-am.svg#icon-right"></use>
+              </svg>
+            </button>
+            <ul class="list contacts-list">
+              <li class="contacts-list-item">
+                <a href="" class="link">tg</a>
+              </li>
+              <li class="contacts-list-item">
+                <a href="" class="link">in</a>
+              </li>
+              <li class="contacts-list-item">
+                <a href="" class="link">fb</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="decor-line"></div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <p class="footer-text">&copy; Altum Mare 2025</p>
+        <a href="./index.html"
+          ><img src="./images/logo/logo-footer.png" alt="" width="120"
+        /></a>
+        <p class="footer-text">
+          Developed with
+          <svg class="heart-icon" width="20" height="12">
+            <use href="./images/icons/icons-am.svg#icon-heart"></use>
+          </svg>
+          by Dari Shpak
+        </p>
+      </div>
+    </footer>
+    <!-- Модальне вікно -->
+    <div class="modal" id="contact-modal">
+      <div class="modal-content">
+        <button class="close-btn" id="close-modal">
+          <svg
+            class="close-modal-icon"
+            id="close-modal-icon"
+            width="30"
+            height="30"
+          >
+            <use
+              href="./images/icons/icons-am.svg#icon-close"
+              class="icon-close-modal"
+              id="icon-close-modal"
+            ></use>
+          </svg>
+        </button>
+
+        <h2 class="section-subtitle">Напишіть нам</h2>
+        <div class="section-img-wrap">
+          <img
+            src="./images/logo/logo-contacts.png"
+            alt="логотип компанії"
+            width="240"
+          />
+        </div>
+
+        <form id="contact-form">
+          <label for="name">Ваше ім'я</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Ваш контакт</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Ваш запит</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="submit-btn">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./js/mob-menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/scroll-to-top.js"></script>
+  </body>
+</html>
