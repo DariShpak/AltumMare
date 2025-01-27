@@ -3,7 +3,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Altum Mare</title>
-     <link rel="icon" type="image/x-icon" href="./images/icons/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/icons/favicon/favicon.ico"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +21,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -27,18 +32,24 @@
     </button>
     <header class="header">
       <div class="container header-container">
-        <ul class="header-nav-list list">
+        <ul class="header-nav-list list left">
           <li class="header-nav-list-item">
             <a href="" class="link">Послуги</a>
           </li>
         </ul>
-        <a href="./index.html" class="logo-header"
-          ><img
-            src="./images/logo/logo-header.png"
-            alt="логотип компанії"
-            width="180"
-        /></a>
-        <ul class="header-nav-list list">
+        <div class="logo-header-wrap">
+          <a href="./index.html" class="logo-header"
+            ><img
+              src="./images/logo/logo-header.png"
+              alt="логотип компанії"
+              width="180"
+          /></a>
+        </div>
+
+        <ul class="header-nav-list list right">
+          <li class="header-nav-list-item">
+            <a href="./blog.html" class="link">Читальня</a>
+          </li>
           <li class="header-nav-list-item">
             <a href="./index.html#contacts-section" class="link">Контакти</a>
           </li>
@@ -61,7 +72,7 @@
         <nav class="mob-menu" id="mob-menu">
           <ul class="mob-menu-list">
             <li><a href="./services.html" class="mob-menu-link">Послуги</a></li>
-            <li><a href="#blog" class="mob-menu-link">Читальня</a></li>
+            <li><a href="./blog.html" class="mob-menu-link">Читальня</a></li>
             <li>
               <a href="#contacts-section" class="mob-menu-link">Контакти</a>
             </li>
@@ -164,10 +175,10 @@
               <div class="decor-line"></div>
             </li>
             <li class="services-list-item">
+              <div class="section-img-wrap">
+                <img src="./images/img/moonkiss.jpg" alt="" width="310" />
+              </div>
               <div class="section-text-content">
-                <div class="section-img-wrap">
-                  <img src="./images/img/moonkiss.jpg" alt="" width="310" />
-                </div>
                 <h3 class="section-subtitle">Астро-Навігація</h3>
                 <p class="section-text">
                   Погляньте на зірки як на мапу, що веде до ваших істинних
@@ -190,7 +201,9 @@
       <section class="section blog-section">
         <div class="container blog-container">
           <div class="section-text-content">
-            <h2 class="section-title">Читальня</h2>
+            <h2 class="section-title">
+              <a href="./blog.html" class="link">Читальня</a>
+            </h2>
             <p class="section-text">
               Затишний куточок для тих, хто любить шукати відповіді в текстах.
               Тут зібрані книги, статті та інші матеріали, які надихають,
