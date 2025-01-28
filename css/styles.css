@@ -13,8 +13,6 @@ body {
   font-weight: 300;
   background-color: var(--bg-color);
   color: var(--dark-color);
-
-  overflow: hidden; /* Ховаємо стандартний скрол */
 }
 
 button {
@@ -486,29 +484,34 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  #fullpage {
-    height: 100vh; /* Висота сторінки */
-    width: 100%; /* Ширина сторінки */
+  .swiper {
+    height: 90vh;
+    width: 100vw;
   }
 
-  #fullpage::-webkit-scrollbar {
-    display: none;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: max-content;
+    height: 90vh;
   }
 
-  .section {
-    width: 100vw; /* Кожна секція займає ширину екрана */
-    height: 100vh; /* Кожна секція займає висоту екрана */
+  .swiper-pagination {
+    bottom: 20px !important;
   }
 
-  .slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 2rem;
-  width: 100vw;
-  height: 100vh;
-}
+  .swiper-pagination-bullet {
+    background: black;
+    opacity: 0.7;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: gray;
+  }
 
   .section-img-wrap > img {
     display: block;

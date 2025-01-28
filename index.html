@@ -21,10 +21,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- FullPage.js CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.18/fullpage.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -85,9 +84,9 @@
       </div>
     </header>
     <main>
-      <div id="fullpage">
-        <section class="section">
-          <section class="hero-section section slide" id="hero">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <section class="hero-section section swiper-slide" id="hero">
             <div class="container hero-container">
               <div class="hero-text-content">
                 <h1 class="hero-title">Altum Mare</h1>
@@ -106,7 +105,7 @@
             </div>
           </section>
           <div class="decor-line"></div>
-          <section class="section services-section slide" id="services">
+          <section class="section services-section swiper-slide" id="services">
             <div class="container services-container">
               <h2 class="section-title">Послуги</h2>
               <ul class="list services-list">
@@ -216,8 +215,9 @@
               </ul>
             </div>
           </section>
-        </section>
+        </div>
       </div>
+      <div class="swiper-pagination"></div>
       <div class="decor-line"></div>
       <section class="section blog-section">
         <div class="container blog-container">
@@ -323,7 +323,7 @@
     <script type="module" src="./js/mob-menu.js"></script>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/scroll-to-top.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.18/fullpage.min.js"></script>
-    <script src="./js/horizontal-scroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./js/horizontal-scroll.js"></script>
   </body>
 </html>

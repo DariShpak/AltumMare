@@ -1,12 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-  new fullpage("#fullpage", {
-    autoScrolling: true, // Автоматичний скрол
-    fitToSection: true, // Адаптація до секцій
-    navigation: true, // Кружечки навігації
-    navigationPosition: "bottom", // Розташування навігації
-    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
-    scrollHorizontally: true, // Горизонтальний скрол
-    slidesNavigation: true, // Навігація для слайдів
-    controlArrows: false // Вимкнути стрілки для слайдів
+  const swiper = new Swiper(".mySwiper", {
+    direction: "horizontal", // Горизонтальний скрол
+    loop: false, // Без зациклення
+    pagination: {
+      el: ".swiper-pagination", // Кружечки пагінації
+      clickable: true
+    },
+    keyboard: {
+      enabled: true // Дозволяє керувати з клавіатури (стрілки)
+    },
+    mousewheel: {
+      invert: false // Дозволяє прокручувати коліщатком миші
+    },
+    grabCursor: false // Курсор змінюється на "руку"
   })
 })
