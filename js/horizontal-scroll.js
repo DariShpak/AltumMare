@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   new fullpage("#fullpage", {
-    autoScrolling: true, // Автоматичний скролінг
+    autoScrolling: true, // Автоматичний скрол
     fitToSection: true, // Адаптація до секцій
-    navigation: true, // Додаємо кружечки для навігації
-    navigationPosition: "bottom", // Розташування навігації внизу
-    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE", // Ліцензія
-    scrollHorizontally: true, // Горизонтальний скрол між секціями
-    slidesNavigation: true, // Додаємо навігацію між слайдами
-    controlArrows: false // Прибираємо стрілки управління слайдами
+    navigation: true, // Кружечки навігації
+    navigationPosition: "bottom", // Розташування навігації
+    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+    scrollHorizontally: true, // Горизонтальний скрол
+    slidesNavigation: true, // Навігація для слайдів
+    controlArrows: false // Вимкнути стрілки для слайдів
   })
 })
