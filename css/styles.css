@@ -13,6 +13,8 @@ body {
   font-weight: 300;
   background-color: var(--bg-color);
   color: var(--dark-color);
+
+  overflow: hidden; /* Ховаємо стандартний скрол */
 }
 
 button {
@@ -484,28 +486,29 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  .horizontal-scroll {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 100vh; /* Контейнер займає всю висоту */
-    overflow: hidden; /* Приховуємо скролбар */
-    scroll-behavior: smooth; /* Додаємо плавність */
+  #fullpage {
+    height: 100vh; /* Висота сторінки */
+    width: 100%; /* Ширина сторінки */
   }
 
-  /* Секції в горизонтальному скролі */
-  .horizontal-scroll > section {
-    flex: 0 0 100vw; /* Кожна секція займає ширину екрана */
-    height: 100%; /* Займає всю висоту контейнера */
-    scroll-snap-align: start; /* Автоматична прив’язка до початку секції */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Приховуємо скролбар */
-  .horizontal-scroll::-webkit-scrollbar {
+  #fullpage::-webkit-scrollbar {
     display: none;
   }
+
+  .section {
+    width: 100vw; /* Кожна секція займає ширину екрана */
+    height: 100vh; /* Кожна секція займає висоту екрана */
+  }
+
+  .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  width: 100vw;
+  height: 100vh;
+}
 
   .section-img-wrap > img {
     display: block;
@@ -572,7 +575,7 @@ textarea {
 
   .services-container {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
   }
 
   .services-list {

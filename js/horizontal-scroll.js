@@ -1,24 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const horizontalScroll = () => {
-    const scrollContainer = document.querySelector(".horizontal-scroll")
-
-    if (window.innerWidth >= 1024 && scrollContainer) {
-      // Забороняємо вертикальний скрол для body
-      document.body.style.overflow = "hidden"
-
-      // Додаємо обробник події прокрутки
-      scrollContainer.addEventListener("wheel", (e) => {
-        e.preventDefault() // Відміняємо стандартну поведінку
-        scrollContainer.scrollLeft += e.deltaY // Горизонтальний скрол
-      })
-    } else {
-      document.body.style.overflow = "" // Повертаємо стандартну поведінку
-    }
-  }
-
-  // Запустити логіку під час завантаження сторінки
-  horizontalScroll()
-
-  // Перевіряти зміну ширини екрану
-  window.addEventListener("resize", horizontalScroll)
+  new fullpage("#fullpage", {
+    autoScrolling: true, // Автоматичний скролінг
+    fitToSection: true, // Адаптація до секцій
+    navigation: true, // Додаємо кружечки для навігації
+    navigationPosition: "bottom", // Розташування навігації внизу
+    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE", // Ліцензія
+    scrollHorizontally: true, // Горизонтальний скрол між секціями
+    slidesNavigation: true, // Додаємо навігацію між слайдами
+    controlArrows: false // Прибираємо стрілки управління слайдами
+  })
 })

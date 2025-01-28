@@ -21,7 +21,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- FullPage.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.18/fullpage.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -81,8 +85,8 @@
       </div>
     </header>
     <main>
-      <div class="horizontal-scroll">
-        <section class="hero-section section" id="hero">
+      <div id="fullpage">
+        <section class="hero-section section slide" id="hero">
           <div class="container hero-container">
             <div class="hero-text-content">
               <h1 class="hero-title">Altum Mare</h1>
@@ -101,7 +105,7 @@
           </div>
         </section>
         <div class="decor-line"></div>
-        <section class="section services-section" id="services">
+        <section class="section services-section slide" id="services">
           <div class="container services-container">
             <h2 class="section-title">Послуги</h2>
             <ul class="list services-list">
@@ -301,8 +305,11 @@
         </form>
       </div>
     </div>
+
     <script type="module" src="./js/mob-menu.js"></script>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/scroll-to-top.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.18/fullpage.min.js"></script>
+    <script src="./js/horizontal-scroll.js"></script>
   </body>
 </html>
