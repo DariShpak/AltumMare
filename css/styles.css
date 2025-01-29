@@ -198,6 +198,7 @@ ol {
   height: 100%;
   padding: 20px;
   display: none;
+  z-index: 9999;
 }
 
 .mob-menu-list {
@@ -395,13 +396,6 @@ ol {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Відображати кнопку лише на мобільних та планшетних пристроях */
-/* @media (max-width: 768px) {
-  .scroll-to-top-btn {
-    display: block;
-  }
-} */
-
 /* Стиль для фону модального вікна */
 .modal {
   display: none;
@@ -465,12 +459,6 @@ textarea {
   border: 1px solid var(--dark-color);
   margin-top: 24px;
 }
-
-/* @media screen and (min-width: 390px) {
-  .container {
-    max-width: 767px;
-  }
-} */
 
 @media (min-width: 768px) {
   .container {
