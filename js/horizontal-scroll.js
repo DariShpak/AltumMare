@@ -1,21 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth >= 1024) {
-    const swiper = new Swiper(".mySwiper", {
-      direction: "horizontal", // Горизонтальний напрямок
-      loop: false, // Без зациклення
-      slidesPerView: 1.5, // Одна секція за раз
-      spaceBetween: 0, // Відстань між секціями
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      mousewheel: true, // Прокрутка мишкою
-      keyboard: {
-        enabled: true // Управління клавіатурою
+  let swiperInstance
+
+  function initSwiper() {
+    if (window.innerWidth >= 1024) {
+      if (!swiperInstance) {
+        swiperInstance = new Swiper(".mySwiper", {
+          direction: "horizontal",
+          loop: false,
+          slidesPerView: 1,
+          spaceBetween: 0,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          mousewheel: true,
+          keyboard: {
+            enabled: true
+          },
+          allowSlideNext: true,
+          allowSlidePrev: true
+        })
+
+        document.body.style.overflow = "hidden"
       }
-    })
-  } else {
-    // Для мобільних додаємо стандартний вертикальний скрол
-    document.body.style.overflowY = "auto"
+    } else {
+      if (swiperInstance) {
+        swiperInstance.destroy(true, true)
+        swiperInstance = undefined
+      }
+
+      document.body.style.overflow = "auto"
+
+      document
+        .querySelector(".swiper-wrapper")
+        ?.classList.remove("swiper-wrapper")
+      document.querySelectorAll(".swiper-slide").forEach((slide) => {
+        slide.classList.remove("swiper-slide")
+      })
+    }
   }
+
+  initSwiper()
+  window.addEventListener("resize", initSwiper)
 })
