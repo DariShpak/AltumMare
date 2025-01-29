@@ -503,11 +503,13 @@ textarea {
 
   .swiper {
     width: 100%;
-    height: 100%;
+    height: 80%;
   }
 
   .swiper-wrapper {
     display: flex !important;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 
   .swiper-slide {
@@ -521,6 +523,7 @@ textarea {
 
   .swiper-pagination {
     bottom: 20px !important;
+    position: relative;
   }
 
   .swiper-pagination-bullet {
@@ -535,8 +538,8 @@ textarea {
 
   .section-img-wrap > img {
     display: block;
-    /* height: 100%;
-    width: 100%; */
+    height: 100%;
+    width: 100%;
 
     object-fit: cover;
   }
@@ -590,9 +593,15 @@ textarea {
     display: none;
   }
 
+  .between-section-title {
+    display: none;
+  }
+
   .footer {
     padding-top: 24px;
     padding-bottom: 24px;
+
+    margin-bottom: auto;
   }
 
   .footer-container {
