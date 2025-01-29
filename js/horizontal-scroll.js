@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const swiperContainer = document.querySelector(".mySwiper")
   let swiperInstance
 
-  function initSwiper() {
-    if (window.innerWidth >= 1024) {
-      if (!swiperInstance) {
+  function handleBreakpointChange(e) {
+    if (e.matches) {
+      // Якщо ширина вікна >= 1024px
+      if (!swiperInstance && swiperContainer) {
         swiperInstance = new Swiper(".mySwiper", {
           direction: "horizontal",
           loop: false,
@@ -16,30 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
           mousewheel: true,
           keyboard: {
             enabled: true
-          },
-          allowSlideNext: true,
-          allowSlidePrev: true
+          }
         })
-
         document.body.style.overflow = "hidden"
       }
     } else {
+      // Якщо ширина вікна < 1024px
       if (swiperInstance) {
         swiperInstance.destroy(true, true)
         swiperInstance = undefined
+        document.body.style.overflow = "auto"
       }
-
-      document.body.style.overflow = "auto"
-
-      document
-        .querySelector(".swiper-wrapper")
-        ?.classList.remove("swiper-wrapper")
-      document.querySelectorAll(".swiper-slide").forEach((slide) => {
-        slide.classList.remove("swiper-slide")
-      })
     }
   }
 
-  initSwiper()
-  window.addEventListener("resize", initSwiper)
+  const breakpoint = window.matchMedia("(min-width: 1024px)")
+  breakpoint.addListener(handleBreakpointChange)
+  handleBreakpointChange(breakpoint)
 })
