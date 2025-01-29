@@ -49,6 +49,10 @@ ol {
   padding: 50px 20px; /* Додаємо відступи */
 }
 
+.swiper-pagination {
+  display: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -119,6 +123,11 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.section-img-wrap {
+  max-width: 310px;
+  overflow: hidden;
 }
 
 .list-title {
@@ -486,14 +495,6 @@ textarea {
   .section-text {
     font-size: 16px;
   }
-
-  .section-img-wrap > img {
-    display: block;
-    /* height: 100%;
-    width: 100%; */
-
-    object-fit: cover;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -514,7 +515,6 @@ textarea {
 
   .swiper-slide {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -522,6 +522,7 @@ textarea {
   }
 
   .swiper-pagination {
+    display: block;
     bottom: 20px !important;
     position: relative;
   }
@@ -534,14 +535,6 @@ textarea {
   .swiper-pagination-bullet-active {
     opacity: 1;
     background: gray;
-  }
-
-  .section-img-wrap > img {
-    display: block;
-    height: 100%;
-    width: 100%;
-
-    object-fit: cover;
   }
 
   .header-container {
@@ -569,24 +562,49 @@ textarea {
   .contacts-section {
     display: none;
   }
+  .section {
+    padding-top: 0;
+  }
 
   .container {
     max-width: 928px;
+    max-height: 640px;
   }
 
   .section-img-wrap {
-    max-width: 498px;
+    max-width: 420px;
   }
 
   .hero-section {
-    padding-top: 72px;
+    padding-top: 0;
+    align-items: first baseline;
   }
 
   .hero-container {
     display: flex;
     flex-direction: row;
-    gap: 92px;
+    gap: 72px;
     align-items: center;
+    height: 80%;
+  }
+
+  .hero-text-content {
+    max-width: 480px;
+  }
+
+  .section-text-content {
+    max-width: 480px;
+  }
+
+  .services-section {
+    align-items: center;
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 72px;
   }
 
   .decor-line {
