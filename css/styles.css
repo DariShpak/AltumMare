@@ -245,18 +245,6 @@ ol {
   margin-bottom: 72px;
 }
 
-.services-list {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-}
-
-.services-list-item {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-
 /* blog */
 .blog-container {
   display: flex;
@@ -567,31 +555,6 @@ textarea {
 
   .decor-line {
     display: none;
-  }
-  .services-container .section-title {
-    display: none;
-  }
-  .services-container .section-text-content {
-    max-width: 320px;
-  }
-
-  .services-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .services-list {
-    display: flex;
-    gap: 72px;
-  }
-
-
-
-  .services-list-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 48px;
   }
 
   .footer {
