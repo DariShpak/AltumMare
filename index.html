@@ -26,18 +26,24 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/home-page.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
-  <body class="home-page">
+  <body>
     <button id="scroll-to-top" class="scroll-to-top-btn">
       <svg class="scroll-up-icon" width="30" height="30">
         <use href="./images/icons/icons-am.svg#icon-up"></use>
       </svg>
     </button>
+
     <header class="header">
       <div class="container header-container">
         <ul class="header-nav-list list left">
           <li class="header-nav-list-item">
             <a href="./services.html" class="link">Послуги</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="./blog.html" class="link">Читальня</a>
           </li>
         </ul>
         <div class="logo-header-wrap">
@@ -48,13 +54,24 @@
               width="180"
           /></a>
         </div>
-
         <ul class="header-nav-list list right">
           <li class="header-nav-list-item">
-            <a href="./blog.html" class="link">Читальня</a>
+            <button class="more-btn link open-modal-btn">
+              Звʼязатися
+              <svg class="button-decor-icon" width="16" height="16">
+                <use href="./images/icons/icons-am.svg#icon-right"></use>
+              </svg>
+            </button>
           </li>
           <li class="header-nav-list-item">
-            <a href="./index.html#contacts-section" class="link">Контакти</a>
+            <ul class="list socials-list">
+              <li class="socials-list-item">
+                <a href="" class="link">TG</a>
+              </li>
+              <li class="socials-list-item">
+                <a href="" class="link">IN</a>
+              </li>
+            </ul>
           </li>
         </ul>
         <button class="mob-menu-btn" type="button" aria-label="Відкрити меню">
@@ -74,184 +91,184 @@
         <!-- Мобільне меню -->
         <nav class="mob-menu" id="mob-menu">
           <ul class="mob-menu-list">
-            <li><a href="./services.html" class="mob-menu-link">Послуги</a></li>
-            <li><a href="./blog.html" class="mob-menu-link">Читальня</a></li>
-            <li>
-              <a href="#contacts-section" class="mob-menu-link">Контакти</a>
+            <li class="mob-menu-list-item">
+              <a href="./services.html" class="mob-menu-link">Послуги</a>
+            </li>
+            <li class="mob-menu-list-item">
+              <a href="./blog.html" class="mob-menu-link">Читальня</a>
+            </li>
+            <li class="mob-menu-list-item">
+              <button class="more-btn link open-modal-btn">
+                Звʼязатися
+                <svg class="button-decor-icon" width="16" height="16">
+                  <use href="./images/icons/icons-am.svg#icon-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="mob-menu-list-item">
+              <ul class="list socials-list">
+                <li class="socials-list-item">
+                  <a href="" class="link">TG</a>
+                </li>
+                <li class="socials-list-item">
+                  <a href="" class="link">IN</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <section class="hero-section section swiper-slide" id="hero">
-            <div class="container hero-container">
-              <div class="hero-text-content">
-                <h1 class="hero-title">Altum Mare</h1>
-                <p class="hero-text">
-                  — простір для дослідження глибин людського досвіду.
-                </p>
-                <p class="hero-text">
-                  Ми поєднуємо інтуїцію сновидінь, символізм мистецтва, мудрість
-                  тіла, космічну навігацію та силу знань, щоб допомогти вам
-                  знайти гармонію між внутрішнім і зовнішнім світом.
-                </p>
-              </div>
-              <div class="section-img-wrap">
-                <img src="./images/img/cave.jpg" alt="" width="310" />
-              </div>
-            </div>
-          </section>
-          <div class="decor-line"></div>
-            <h2 class="between-section-title ">Послуги</h2>
-          <section
-            class="section services-section swiper-slide home-dreams-section"
-            id="services"
-          >
-            <div class="container services-container">
-              <div class="section-img-wrap">
-                <img src="./images/img/dreams.jpg" alt="" width="310" />
-              </div>
-              <div class="section-text-content">
-                <h3 class="section-subtitle">Сновидіння</h3>
-                <p class="section-text">
-                  Зазирніть у загадковий світ сновидінь, де приховані відповіді
-                  на запитання, які ми не завжди усвідомлюємо.
-                </p>
-                <p class="section-text">
-                  Тут ми досліджуємо, як сни формують наші емоції, рішення та
-                  внутрішній світ, допомагаючи побачити нові перспективи життя.
-                </p>
-                <a href="./services.html#dreams-section" class="more-btn link"
-                  >Дізнатися більше
-                  <svg class="button-decor-icon" width="16" height="16">
-                    <use href="./images/icons/icons-am.svg#icon-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="decor-line"></div>
-          </section>
-
-          <section
-            class="section services-section swiper-slide home-art-section"
-          >
-            <div class="container services-container">
-              <div class="section-img-wrap">
-                <img src="./images/img/art-studio.jpg" alt="" width="310" />
-              </div>
-              <div class="section-text-content">
-                <h3 class="section-subtitle">Образи в Мистецтві</h3>
-                <p class="section-text">
-                  Візуальне мистецтво має силу передавати те, що не можна
-                  висловити словами. Тут ми досліджуємо символи і образи, що
-                  втілюють емоції, ідеї та архетипи через малюнки, фотографії та
-                  інші художні форми.
-                </p>
-                <a href="./services.html#art-section" class="more-btn link"
-                  >Дізнатися більше
-                  <svg class="button-decor-icon" width="16" height="16">
-                    <use href="./images/icons/icons-am.svg#icon-right"></use>
-                  </svg>
-                </a>
-              </div>
-              <!-- <div class="section-img-wrap">
-                <img src="./images/img/paint.jpg" alt="" width="310" />
-              </div> -->
-            </div>
-          </section>
-          <div class="decor-line"></div>
-
-          <section class="section swiper-slide">
-            <div class="container services-container">
-              <div class="section-img-wrap">
-                <img src="./images/img/bros.jpg" alt="" width="310" />
-              </div>
-              <div class="section-text-content">
-                <h3 class="section-subtitle">Тіло як провідник</h3>
-                <p class="section-text">
-                  Наше тіло — це не просто оболонка, а інструмент для сприйняття
-                  та передачі енергії. Тут ми говоримо про те, як фізичні
-                  відчуття, рухи й дихання можуть стати ключем до розуміння себе
-                  та навколишнього світу.
-                </p>
-                <a href="./services.html#body-section" class="more-btn link"
-                  >Дізнатися більше
-                  <svg class="button-decor-icon" width="16" height="16">
-                    <use href="./images/icons/icons-am.svg#icon-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="decor-line"></div>
-          </section>
-          <section class="section swiper-slide">
-            <div class="container services-container">
-              <div class="section-img-wrap">
-                <img src="./images/img/moonkiss.jpg" alt="" width="310" />
-              </div>
-              <div class="section-text-content">
-                <h3 class="section-subtitle">Астро-Навігація</h3>
-                <p class="section-text">
-                  Погляньте на зірки як на мапу, що веде до ваших істинних
-                  бажань і потенціалу. Тут ми вивчаємо, як астрологія допомагає
-                  зрозуміти життєвий шлях, розкодовуючи вплив планет і космічних
-                  явищ на кожного з нас.
-                </p>
-                <a href="./services.html#astro-section" class="more-btn link"
-                  >Дізнатися більше
-                  <svg class="button-decor-icon" width="16" height="16">
-                    <use href="./images/icons/icons-am.svg#icon-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </section>
+      <!-- <div class="swiper mySwiper">
+        <div class="swiper-wrapper"> -->
+      <section class="hero-section section swiper-slide">
+        <div class="container hero-container">
+          <div class="section-text-content">
+            <h1 class="section-title">Altum Mare</h1>
+            <p class="section-text">
+              — простір для дослідження глибин людського досвіду.
+            </p>
+            <p class="section-text">
+              Ми поєднуємо інтуїцію сновидінь, символізм мистецтва, мудрість
+              тіла, космічну навігацію та силу знань, щоб допомогти вам знайти
+              гармонію між внутрішнім і зовнішнім світом.
+            </p>
+          </div>
+          <div class="section-img-wrap">
+            <img
+              src="./images/img/cave.jpg"
+              width="310"
+              alt="Печера у скелі із видом на море"
+            />
+          </div>
         </div>
-      </div>
-      <div class="swiper-pagination"></div>
+      </section>
+      <div class="decor-line"></div>
+      <section class="section title-wrapper">
+        <div class="container">
+          <h2 class="section-title">Послуги</h2>
+        </div>
+      </section>
+      <div class="decor-line"></div>
+      <section class="section services-section swiper-slide">
+        <div class="container services-container">
+          <div class="section-img-wrap">
+            <img src="./images/img/dreams.jpg" alt="" width="310" />
+          </div>
+          <div class="section-text-content">
+            <h3 class="section-subtitle">Сновидіння</h3>
+            <p class="section-text">
+              Зазирніть у загадковий світ сновидінь, де приховані відповіді на
+              запитання, які ми не завжди усвідомлюємо.
+            </p>
+            <p class="section-text">
+              Тут ми досліджуємо, як сни формують наші емоції, рішення та
+              внутрішній світ, допомагаючи побачити нові перспективи життя.
+            </p>
+            <a href="./services.html#dreams-section" class="more-btn link"
+              >Дізнатися більше
+              <svg class="button-decor-icon" width="16" height="16">
+                <use href="./images/icons/icons-am.svg#icon-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="decor-line"></div>
+      <section class="section services-section swiper-slide">
+        <div class="container services-container">
+          <div class="section-img-wrap">
+            <img src="./images/img/silence.jpg" alt="" width="310" />
+          </div>
+          <div class="section-text-content">
+            <h3 class="section-subtitle">Образи в Мистецтві</h3>
+            <p class="section-text">
+              Візуальне мистецтво має силу передавати те, що не можна висловити
+              словами. Тут ми досліджуємо символи і образи, що втілюють емоції,
+              ідеї та архетипи через малюнки, фотографії та інші художні форми.
+            </p>
+            <a href="./services.html#art-section" class="more-btn link"
+              >Дізнатися більше
+              <svg class="button-decor-icon" width="16" height="16">
+                <use href="./images/icons/icons-am.svg#icon-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="decor-line"></div>
+
+      <section class="section services-section swiper-slide">
+        <div class="container services-container">
+          <div class="section-img-wrap">
+            <img src="./images/img/upside-down.jpg" alt="" width="310" />
+          </div>
+          <div class="section-text-content">
+            <h3 class="section-subtitle">Тіло як провідник</h3>
+            <p class="section-text">
+              Наше тіло — це не просто оболонка, а інструмент для сприйняття та
+              передачі енергії. Тут ми говоримо про те, як фізичні відчуття,
+              рухи й дихання можуть стати ключем до розуміння себе та
+              навколишнього світу.
+            </p>
+            <a href="./services.html#body-section" class="more-btn link"
+              >Дізнатися більше
+              <svg class="button-decor-icon" width="16" height="16">
+                <use href="./images/icons/icons-am.svg#icon-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="decor-line"></div>
+      <section class="section swiper-slide services-section">
+        <div class="container services-container">
+          <div class="section-img-wrap">
+            <img src="./images/img/moonkiss.jpg" alt="" width="310" />
+          </div>
+          <div class="section-text-content">
+            <h3 class="section-subtitle">Астро-Навігація</h3>
+            <p class="section-text">
+              Погляньте на зірки як на мапу, що веде до ваших істинних бажань і
+              потенціалу. Тут ми вивчаємо, як астрологія допомагає зрозуміти
+              життєвий шлях, розкодовуючи вплив планет і космічних явищ на
+              кожного з нас.
+            </p>
+            <a href="./services.html#astro-section" class="more-btn link"
+              >Дізнатися більше
+              <svg class="button-decor-icon" width="16" height="16">
+                <use href="./images/icons/icons-am.svg#icon-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- </div>
+      </div> -->
+      <!-- <div class="swiper-pagination"></div> -->
       <div class="decor-line"></div>
       <section class="section blog-section">
         <div class="container blog-container">
           <div class="section-text-content">
-            <h2 class="section-title">
-              <a href="./blog.html" class="link">Читальня</a>
-            </h2>
+            <a href="./blog.html" class="link">
+              <h2 class="section-title">Читальня</h2>
+            </a>
             <p class="section-text">
               Затишний куточок для тих, хто любить шукати відповіді в текстах.
               Тут зібрані книги, статті та інші матеріали, які надихають,
               навчають і відкривають нові горизонти для роздумів і саморозвитку.
             </p>
-          </div>
-          <div class="section-img-wrap">
-            <img src="./images/img/blog.jpg" alt="" width="310" />
-          </div>
-        </div>
-      </section>
-      <div class="decor-line"></div>
-      <section id="contacts-section" class="section contacts-section">
-        <div class="container contacts-container">
-          <h2 class="section-title visually-hidden">Контакти</h2>
-          <div class="contacts-info-wrap">
-            <button class="more-btn link open-modal-btn">
-              Написати нам
+            <a href="./blog.html" class="more-btn link"
+              >В читальню
               <svg class="button-decor-icon" width="16" height="16">
                 <use href="./images/icons/icons-am.svg#icon-right"></use>
               </svg>
-            </button>
-            <ul class="list contacts-list">
-              <li class="contacts-list-item">
-                <a href="" class="link">tg</a>
-              </li>
-              <li class="contacts-list-item">
-                <a href="" class="link">in</a>
-              </li>
-              <li class="contacts-list-item">
-                <a href="" class="link">fb</a>
-              </li>
-            </ul>
+            </a>
+          </div>
+          <div class="section-img-wrap">
+            <img src="./images/img/blog.jpg" alt="" width="310" />
           </div>
         </div>
       </section>
@@ -260,9 +277,12 @@
     <footer class="footer">
       <div class="container footer-container">
         <p class="footer-text">&copy; Altum Mare 2025</p>
-        <a href="./index.html"
-          ><img src="./images/logo/logo-footer.png" alt="" width="120"
-        /></a>
+        <div class="footer-logo-wrap">
+          <a href="./index.html"
+            ><img src="./images/logo/logo-footer.png" alt="" width="120"
+          /></a>
+        </div>
+
         <p class="footer-text">
           Developed with
           <svg class="heart-icon" width="20" height="12">
@@ -313,11 +333,10 @@
         </form>
       </div>
     </div>
-
     <script type="module" src="./js/mob-menu.js"></script>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/scroll-to-top.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script type="module" src="./js/horizontal-scroll.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/horizontal-scroll.js"></script> -->
   </body>
 </html>
