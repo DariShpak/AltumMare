@@ -356,6 +356,28 @@ ol {
   margin-top: 24px;
 }
 
+.article {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.article-title {
+    font-size: 18px;
+    color: #007bff;
+    margin: 0;
+}
+
+.article-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.article-content p {
+    padding: 10px 0;
+}
+
 /* Сховати кнопку за замовчуванням */
 .scroll-to-top-btn {
   /* display: none; */
@@ -486,7 +508,7 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  
+
   .home-page body {
     overflow: hidden;
   }
