@@ -369,13 +369,19 @@ ol {
 }
 
 .article-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    display: none;
+    padding: 10px 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
-.article-content p {
-    padding: 10px 0;
+/* Коли відкрито */
+.article-content.open {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
 }
 
 /* Сховати кнопку за замовчуванням */

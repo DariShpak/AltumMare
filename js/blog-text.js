@@ -2,18 +2,14 @@ document.querySelectorAll(".article-title").forEach((title) => {
   title.addEventListener("click", () => {
     const content = title.nextElementSibling
 
-    // Закриваємо всі відкриті статті
+    // Закриваємо всі інші відкриті статті
     document.querySelectorAll(".article-content").forEach((item) => {
       if (item !== content) {
-        item.style.maxHeight = null
+        item.classList.remove("open")
       }
     })
 
-    // Перемикаємо видимість поточної статті
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px"
-    }
+    // Перемикаємо клас open для поточного контенту
+    content.classList.toggle("open")
   })
 })
