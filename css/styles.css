@@ -346,42 +346,37 @@ ol {
   }
 }
 
-.blog-posts-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.blog-post-item .decor-line {
-  margin-top: 24px;
-}
-
 .article {
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-    cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .article-title {
-    font-size: 18px;
-    color: #007bff;
-    margin: 0;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.4;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin: 0;
 }
 
 .article-content {
-    display: none;
-    padding: 10px 0;
-    opacity: 0;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  display: none;
+  padding: 10px 0;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
+  text-align: justify;
 }
 
 /* Коли відкрито */
 .article-content.open {
-    display: block;
-    opacity: 1;
-    transform: scaleY(1);
+  display: block;
+  opacity: 1;
+  transform: scaleY(1);
 }
 
 /* Сховати кнопку за замовчуванням */
@@ -514,7 +509,6 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-
   .home-page body {
     overflow: hidden;
   }
