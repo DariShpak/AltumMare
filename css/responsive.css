@@ -102,6 +102,17 @@
     justify-content: space-evenly;
   }
 
+  .section-text-content.text-content {
+    flex: 1;
+  }
+
+  .section-img-wrap.image-content {
+    flex: 1;
+    position: sticky;
+    top: 100px; 
+    height: fit-content;
+  }
+
   .blog-page-hero-container {
     justify-content: space-between;
   }
