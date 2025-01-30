@@ -47,7 +47,6 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -158,11 +157,11 @@ img {
 }
 
 .logo-header-wrap {
+  display: flex;
+  justify-content: center;
+
   padding-top: 16px;
   padding-bottom: 16px;
-
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* ================= FOOTER STYLES ================= */

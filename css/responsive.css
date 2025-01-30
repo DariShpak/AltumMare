@@ -1,7 +1,23 @@
 @media screen and (min-width: 768px) {
-  
-}
+  .container {
+    max-width: 672px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
 
+  .section-img-wrap > img {
+    width: 576px;
+    object-fit: cover;
+  }
+
+  .mob-menu-btn {
+    right: 95;
+  }
+
+  .decor-line {
+    width: 110px;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .container {
