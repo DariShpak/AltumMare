@@ -137,9 +137,34 @@ img {
   text-transform: uppercase;
   padding-bottom: 12px;
   padding-top: 12px;
+  max-width: 180px;
 
   background-color: transparent;
   border: none;
+}
+
+.btn-link {
+  position: relative;
+  transition: color 0.3s ease;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  color: var(--dark-color);
+}
+
+.btn-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--dark-color);
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.btn-link:hover::after {
+  width: 100%;
 }
 /* ================= HEADER STYLES ================= */
 .header {
@@ -282,8 +307,4 @@ img {
   text-decoration: none;
   font-size: 24px;
   display: block;
-}
-
-.mob-menu-link:hover {
-  text-decoration: underline;
 }

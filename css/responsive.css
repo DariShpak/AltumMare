@@ -28,10 +28,38 @@
     display: none;
   }
 
+  .header-container {
+    display: flex;
+  }
+
   .header-nav-list {
     display: flex;
     gap: 24px;
   }
+
+  /* .header-nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    color: var(--dark-color);
+  }
+
+  .header-nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--dark-color);
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .header-nav-link:hover::after {
+    width: 100%;
+  } */
 
   .logo-header-wrap {
     margin-left: auto;
