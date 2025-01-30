@@ -1,0 +1,14 @@
+.dreams-container,
+.art-container,
+.body-container,
+.astro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.service {
+  border-bottom: 1px solid var(--dark-color);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

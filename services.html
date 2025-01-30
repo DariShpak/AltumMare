@@ -22,6 +22,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/services-page.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <button id="scroll-to-top" class="scroll-to-top-btn">
@@ -31,9 +33,12 @@
     </button>
     <header class="header">
       <div class="container header-container">
-        <ul class="header-nav-list list">
+        <ul class="header-nav-list list left">
           <li class="header-nav-list-item">
-            <a href="" class="link">Послуги</a>
+            <a href="./services.html" class="link">Послуги</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="./blog.html" class="link">Читальня</a>
           </li>
         </ul>
         <div class="logo-header-wrap">
@@ -44,12 +49,24 @@
               width="180"
           /></a>
         </div>
-        <ul class="header-nav-list list">
+        <ul class="header-nav-list list right">
           <li class="header-nav-list-item">
-            <a href="./blog.html" class="link">Читальня</a>
+            <button class="more-btn link open-modal-btn">
+              Звʼязатися
+              <svg class="button-decor-icon" width="16" height="16">
+                <use href="./images/icons/icons-am.svg#icon-right"></use>
+              </svg>
+            </button>
           </li>
           <li class="header-nav-list-item">
-            <a href="./index.html#contacts-section" class="link">Контакти</a>
+            <ul class="list socials-list">
+              <li class="socials-list-item">
+                <a href="" class="link">TG</a>
+              </li>
+              <li class="socials-list-item">
+                <a href="" class="link">IN</a>
+              </li>
+            </ul>
           </li>
         </ul>
         <button class="mob-menu-btn" type="button" aria-label="Відкрити меню">
@@ -69,18 +86,41 @@
         <!-- Мобільне меню -->
         <nav class="mob-menu" id="mob-menu">
           <ul class="mob-menu-list">
-            <li><a href="./index.html" class="mob-menu-link">Домашня</a></li>
-            <li><a href="./blog.html" class="mob-menu-link">Читальня</a></li>
-            <li>
-              <a href="#contacts-section" class="mob-menu-link">Контакти</a>
+            <li class="mob-menu-list-item">
+              <a href="./services.html" class="mob-menu-link">Послуги</a>
+            </li>
+            <li class="mob-menu-list-item">
+              <a href="./blog.html" class="mob-menu-link">Читальня</a>
+            </li>
+            <li class="mob-menu-list-item">
+              <button class="more-btn link open-modal-btn">
+                Звʼязатися
+                <svg class="button-decor-icon" width="16" height="16">
+                  <use href="./images/icons/icons-am.svg#icon-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="mob-menu-list-item">
+              <ul class="list socials-list">
+                <li class="socials-list-item">
+                  <a href="" class="link">TG</a>
+                </li>
+                <li class="socials-list-item">
+                  <a href="" class="link">IN</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <h1 class="visually-hidden">Послуги</h1>
-
+      <section class="section title-wrapper">
+        <div class="container">
+          <h1 class="section-title">Послуги Altum Mare</h1>
+        </div>
+      </section>
+      <div class="decor-line"></div>
       <section id="dreams-section" class="section dreams-section">
         <div class="container dreams-container">
           <div class="section-img-wrap">
@@ -158,7 +198,7 @@
       <section id="body-section" class="section body-section">
         <div class="container body-container">
           <div class="section-img-wrap">
-            <img src="./images/img/moondance.jpg" alt="" width="310" />
+            <img src="./images/img/sea-dance.jpg" alt="" width="310" />
           </div>
           <div class="section-text-content">
             <h2 class="section-subtitle">Робота з тілом</h2>
@@ -235,38 +275,16 @@
         </div>
       </section>
       <div class="decor-line"></div>
-      <section id="contacts-section" class="section contacts-section">
-        <div class="container contacts-container">
-          <h2 class="section-title visually-hidden">Контакти</h2>
-          <div class="contacts-info-wrap">
-            <button class="more-btn link open-modal-btn">
-              Написати нам
-              <svg class="button-decor-icon" width="16" height="16">
-                <use href="./images/icons/icons-am.svg#icon-right"></use>
-              </svg>
-            </button>
-            <ul class="list contacts-list">
-              <li class="contacts-list-item">
-                <a href="" class="link">tg</a>
-              </li>
-              <li class="contacts-list-item">
-                <a href="" class="link">in</a>
-              </li>
-              <li class="contacts-list-item">
-                <a href="" class="link">fb</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <div class="decor-line"></div>
     </main>
     <footer class="footer">
       <div class="container footer-container">
         <p class="footer-text">&copy; Altum Mare 2025</p>
-        <a href="./index.html"
-          ><img src="./images/logo/logo-footer.png" alt="" width="120"
-        /></a>
+        <div class="footer-logo-wrap">
+          <a href="./index.html"
+            ><img src="./images/logo/logo-footer.png" alt="" width="120"
+          /></a>
+        </div>
+
         <p class="footer-text">
           Developed with
           <svg class="heart-icon" width="20" height="12">

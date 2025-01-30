@@ -1,9 +1,8 @@
 /* ================= BLOG STYLES ================= */
-
-.blog-container {
+.hero-container {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: 24px;
 }
 
 .article {

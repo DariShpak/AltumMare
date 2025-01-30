@@ -1,4 +1,3 @@
-
 /* ================= HERO SECTION ================= */
 
 .hero-container {
@@ -7,30 +6,29 @@
   gap: 48px;
 }
 
-.hero-container .section-text{
+.hero-container .section-text {
   text-align: justify;
-
 }
 
 /* ================= SERVICES SECTION ================= */
-.between-section-title{
-display: none;
+.between-section-title {
+  display: none;
 }
 
 .services-section {
-display: block;
-}
-
-.services-container{
   display: block;
 }
 
-.section-subtitle{
+.services-container {
+  display: block;
+}
+
+.section-subtitle {
   margin-top: 24px;
 }
 
 /* ===================== BLOG SECTION ==================== */
 
-.blog-container .section-text{
-margin-bottom: 24px;
+.blog-container .section-text {
+  margin-bottom: 24px;
 }

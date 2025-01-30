@@ -111,6 +111,12 @@ img {
   gap: 24px;
 }
 
+.list-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
 .section-img-wrap {
   max-width: 310px;
 }
@@ -224,8 +230,6 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
-
-
 }
 
 .hidden {
